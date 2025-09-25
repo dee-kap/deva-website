@@ -25,3 +25,18 @@ layout: "layout.njk"
   <h2>Latest Projects</h2>
   {% include "carousels.njk" %}
 </section>
+<script>
+  $(document).ready(function(){
+    {% for project in projects %}
+      $(".carousel-{{ project.name }}").owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        nav: true,
+        dots: true
+      });
+    {% endfor %}
+  });
+</script>
+
