@@ -1,5 +1,5 @@
 {% for project in projects %}
-  <h2>{{ project.name | upper }}</h2>
+  {# <h2>{{ project.name | upper }}</h2> #}
   <div class="owl-carousel owl-theme carousel-{{ project.name }}">
     {% for img in project.images %}
       <div class="item">
