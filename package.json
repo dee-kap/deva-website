@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "eleventy",
+    "build-ghpages": "eleventy",
     "start": "eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
