@@ -1,5 +1,6 @@
 # Eleventy output
 _site/
+dist/
 
 # Node modules
 node_modules/
