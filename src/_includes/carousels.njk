@@ -3,7 +3,7 @@
   <div class="owl-carousel owl-theme carousel-{{ project.name }}">
     {% for img in project.images %}
       <div class="item">
-        <img src="{{ img }}" alt="Image for {{ project.name }}" loading="lazy">
+        <img src="{{ img }}?v={{ version }}" alt="Image for {{ project.name }}" loading="lazy">
       </div>
     {% endfor %}
   </div>
