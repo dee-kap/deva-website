@@ -9,7 +9,8 @@ function getImages(projectName) {
 
   return fs
     .readdirSync(folder)
-    .filter((file) => /\.(jpg|jpeg|png|webp)$/i.test(file))
+    // .filter((file) => /\.(jpg|jpeg|png|webp)$/i.test(file))
+    .filter((file) => /\.(png|webp)$/i.test(file))
     .map((file) => `/${basePath}/${projectName}/${file}`);
 }
 
