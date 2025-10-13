@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://devaprojects.com.au/sitemap.xml
